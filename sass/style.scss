@@ -4,7 +4,7 @@ $grid-gutter-width: 40px;
 $border-radius-base:  4px;
 $padding-base-vertical: 14px;
 
-$brand-primary: #ff5722;
+$brand-primary: #A7640B;
 $brand-secondary: #1fb5f6; 
 
 $brand-white: #fff;
@@ -20,6 +20,42 @@ $brand-dark-footer: #222831;
 $input-border-focus: $brand-primary;
 $form-group-margin-bottom: 30px;
 
+/* Add this CSS to your stylesheet or <style> tag in the <head> of your HTML */
+
+/* Show dropdown menu on hover for small screens */
+@media (max-width: 767px) {
+    #fh5co-menu-wrap {
+        display: none;
+        position: absolute;
+        background: #fff;
+        width: 100%;
+        top: 60px; /* Adjust as needed based on your header height */
+        left: 0;
+        z-index: 9999;
+    }
+
+    #fh5co-menu-wrap ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    #fh5co-menu-wrap ul li {
+        border-bottom: 1px solid #ccc;
+    }
+
+    #fh5co-menu-wrap ul li a {
+        display: block;
+        padding: 10px 20px;
+        color: #333;
+        text-decoration: none;
+    }
+    
+    /* Show menu when the toggle button is clicked */
+    #fh5co-menu-wrap.open {
+        display: block;
+    }
+}
 
 
 // Mixin
@@ -1287,7 +1323,7 @@ figure {
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	z-index: 99;
+	z-index: 199;
 	background: #222;
 	right: -240px;
 	width: 240px;

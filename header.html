@@ -4,7 +4,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Charity &mdash; 100% Free Fully Responsive HTML5 Template by FREEHTML5.co</title>
+	<title>GAGDI SUPPORT FOUNDATION</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
@@ -43,50 +43,137 @@
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
 
 	</head>
 	<body>
 		<div id="fh5co-wrapper">
 		<div id="fh5co-page">
 		
-		<header id="fh5co-header-section" class="sticky-banner">
-			<div class="container">
-				<div class="nav-header">
-					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
-					<h1 id="fh5co-logo"><a href="index.html">GAGDI</a></h1>
-				
-					<nav id="fh5co-menu-wrap" role="navigation">
-						<ul class="sf-menu" id="fh5co-primary-menu">
-							<li class="">
-								<a href="index.html">Home</a>
-							</li>
-							<!-- <li>
-								<a href="#" class="fh5co-sub-ddown">Get Involved</a>
-								<ul class="fh5co-sub-menu">
-									<li><a href="#">Donate</a></li>
-									<li><a href="#">Fundraise</a></li>
-									<li><a href="#">Campaign</a></li>
-									<li><a href="#">Philantrophy</a></li>
-									<li><a href="#">Volunteer</a></li>
-								</ul>
-							</li> -->
-							<!-- <li>
-								<a href="#" class="fh5co-sub-ddown">Projects</a>
-								 <ul class="fh5co-sub-menu">
-								 	<li><a href="#">Water World</a></li>
-								 	<li><a href="#">Cloth Giving</a></li>
-								 	<li><a href="#">Medical Mission</a></li>
-								</ul>
-							</li> -->
-                            <li class=""><a href="project.html">Project</a></li>
-							<li class=""><a href="about.html">About</a></li>
-							<li class=""><a href="gallery.html">Gallery</a></li>
-							<li class=""><a href="contact.html">Contact</a></li>
-						</ul>
-					</nav>
+			<header id="fh5co-header-section" class="sticky-banner">
+				<div class="container">
+					<div class="nav-header">
+						<!-- Navbar Brand -->
+						<!-- <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark">
+							<i></i>
+						</a> -->
+
+						<div class="dropdown show">
+							<a class="fh5co-nav-toggle dark " href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<i></i>
+							</a>
+						  
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							  <a class="dropdown-item" href="index.html">Home</a>
+							  <a class="dropdown-item" href="project.html">Project</a>
+							  <a class="dropdown-item" href="about.html">About</a>
+							  <a class="dropdown-item" href="gallery.html">Gallery</a>
+							  <a class="dropdown-item" href="contact.html">Contact</a>
+							</div>
+						  </div>
+						<h1 id="fh5co-logo">
+							<a href="#">
+								<!-- Your Logo -->
+								<img src="images/logo.png" alt="logo" class="img-responsive">
+							</a>
+						</h1>
+			
+						<!-- Navbar Menu -->
+						<nav id="fh5co-menu-wrap" role="navigation">
+							<ul class="sf-menu" id="fh5co-primary-menu">
+								<!-- Home -->
+								<li class="nav-item">
+									<a href="index.html" class="nav-link">Home</a>
+								</li>
+								<!-- Project -->
+								<li class="nav-item">
+									<a href="project.html" class="nav-link">Project</a>
+								</li>
+								<!-- About -->
+								<li class="nav-item">
+									<a href="about.html" class="nav-link">About</a>
+								</li>
+								<!-- Gallery -->
+								<li class="nav-item">
+									<a href="gallery.html" class="nav-link">Gallery</a>
+								</li>
+								<!-- Contact -->
+								<li class="nav-item">
+									<a href="contact.html" class="nav-link">Contact</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
 				</div>
-			</div>
-		</header>
+			</header>
+			
+			
 
   
         
+<script src="js/jquery.min.js"></script>
+<!-- jQuery Easing -->
+<script src="js/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/sticky.js"></script>
+
+<!-- Stellar -->
+<script src="js/jquery.stellar.min.js"></script>
+<!-- Superfish -->
+<script src="js/hoverIntent.js"></script>
+<script src="js/superfish.js"></script>
+
+<!-- Main JS -->
+<script src="js/main.js"></script>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+<script>
+    $(document).ready(function () {
+        // Toggle the navbar when the toggle button is clicked
+        $('.js-fh5co-nav-toggle').on('click', function (e) {
+            e.preventDefault();
+            $(this).toggleClass('active');
+            $('#fh5co-menu-wrap').toggleClass('open'); // Toggle the "open" class
+        });
+
+        // Show the menu when hovering over the toggle button
+        $('.js-fh5co-nav-toggle').hover(function () {
+            if ($(window).width() < 768) {
+                $('#fh5co-menu-wrap').addClass('open');
+            }
+        }, function () {
+            if ($(window).width() < 768) {
+                $('#fh5co-menu-wrap').removeClass('open');
+            }
+        });
+
+        // Close the navbar when a menu item is clicked (for mobile)
+        $('#fh5co-menu-wrap ul li a').on('click', function () {
+            if ($(window).width() < 768) {
+                $('.js-fh5co-nav-toggle').removeClass('active');
+                $('#fh5co-menu-wrap').removeClass('open');
+            }
+        });
+
+        // Adjust the navbar on window resize
+        $(window).resize(function () {
+            if ($(window).width() > 768) {
+                $('#fh5co-menu-wrap').removeAttr('style').removeClass('open');
+                $('.js-fh5co-nav-toggle').removeClass('active');
+            }
+        });
+    });
+</script>
