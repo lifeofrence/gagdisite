@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html class="no-js">
+	
+	<head id="head">
+	
+	</head>
+	<body>
+		<div id="fh5co-wrapper">
+		<div id="fh5co-page">
+
+			<header id="fh5co-header-section" class="sticky-banner">
+				<div class="container">
+					<div class="nav-header">
+						<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
+						<h1 id="fh5co-logo">
+							<a href="index.html">
+								<!-- Your Logo -->
+								<img src="images/logo.png" alt="logo" class="img-responsive">
+							</a>
+						</h1>
+						<!-- START #fh5co-menu-wrap -->
+						<nav id="fh5co-menu-wrap" role="navigation">
+							<ul class="sf-menu" id="fh5co-primary-menu">
+								<li class="active">
+									<a href="index.html">Home</a>
+								</li>
+								
+								<li>
+									<a href="project.html" class="fh5co-sub-ddown">Projects</a> 
+									
+								</li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="gallery.html">Gallery</a></li>
+								<li><a href="contact.php">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+		
+
+<!-- <div class="fh5co-hero">
+			<div class="fh5co-overlay"></div>
+			<div class="fh5co-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(images/cover_bg_2.jpg);">
+				<div class="desc animate-box">
+					<h2><strong>Contact</strong> Us</h2>
+					<span>HandCrafted by <a href="http://frehtml5.co/" target="_blank" class="fh5co-site-name">FreeHTML5.co</a></span>
+					<span><a class="btn btn-primary btn-lg" href="#">Donate Now</a></span>
+				</div>
+			</div>
+
+		</div> -->
+
+<div id="fh5co-contact" class="animate-box">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-6">
+				<h3 class="section-title">Our Address</h3>
+				<p>Pay us a visit at our location:</p>
+				<ul class="contact-info">
+					<li><i class="icon-location-pin"></i>Nigeria </li>
+					<li><i class="icon-phone2"></i>+234 </li>
+					<li><i class="icon-mail"></i><a href="#">info@</a></li>
+					<li><i class="icon-globe2"></i><a href="#">www.yoursite.com</a></li>
+				</ul>
+			</div>
+
+			<form action="send_email.php" method="post">
+				<div class="col-md-6">
+				<?php
+// Check if there is a message in the URL
+if (isset($_GET['message'])) {
+    $message = $_GET['message'];
+    echo "<p>$message</p>";
+}
+?>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="text" class="form-control" name="name" placeholder="Name" required>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="email" class="form-control" name="email" placeholder="Email" required>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<textarea name="message" class="form-control" cols="30" rows="7" placeholder="Message" required></textarea>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<input type="submit" value="Send Message" class="btn btn-primary">
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+			
+		</div>
+		
+	</div>
+</div>
+<!-- END fh5co-contact -->
+<div id="map" class="">
+	<iframe
+		src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125896.50177089505!2d9.832353531987048!3d9.572351212616185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1055b2a509538d87%3A0xf918bb2f33f7cf47!2sGagdi%2C%20Plateau!5e0!3m2!1sen!2sng!4v1710695002588!5m2!1sen!2sng"
+		width="1500" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+		referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<!-- END map -->
+
+<footer id="footer-part">
+
+	<div id="footer-placeholder"></div>
+
+</footer>
+<!-- <script src="js/include.js"></script> -->
+</div>
+</div>
+
+
+<script src="script.js"></script>
+
+
+<script src="js/jquery.min.js"></script>
+<!-- jQuery Easing -->
+<script src="js/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/sticky.js"></script>
+
+<!-- Stellar -->
+<script src="js/jquery.stellar.min.js"></script>
+<!-- Superfish -->
+<script src="js/hoverIntent.js"></script>
+<script src="js/superfish.js"></script>
+
+<!-- Main JS -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
